@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { Exo, Inter, Poppins } from "next/font/google";
 import { FC } from "react";
+import { Toaster } from "react-hot-toast";
 
 import { IChildrenWithIntl } from "@/Interface";
 import { dir } from "i18next";
@@ -41,6 +42,7 @@ const RootLayout: FC<IChildrenWithIntl> = ({ children, params: { lng } }) => (
 
     <body className={(poppins.className, exo.className, inter.className)}>
       <AOSInit />
+      <Toaster />
       {children}
     </body>
   </html>

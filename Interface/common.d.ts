@@ -177,6 +177,8 @@ export interface InputFieldProps {
   width?: "full" | "half" | "auto";
   handleOnChange: (e: ChangeEvent<HTMLInputElement>) => void;
   otp?: boolean;
+  name?: string;
+  value?: string;
 }
 export interface IPageHeader {
   pageName: string;
