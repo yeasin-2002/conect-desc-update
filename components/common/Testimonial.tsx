@@ -30,13 +30,20 @@ const Testimonial: React.FC<TestimonialProps> = ({ name, role, text }) => {
               iceland.
             </p>
             <a className="inline-flex items-center">
-              <Image
+              {/*
+
+               এখানে কোন ইমেজ দিচ্ছেন না তাই এটি রিমুভ করা হল । যদি ইমেজ এড করা হয় তাহলে সেটা এড করে নিয়েন । 
+               src="" এর প্রপস ফাকা দেয়াতে একসেবিলিটি + SEO  তে নেগেটিভ ইফেক্ট করবে ।  
+                
+              */}
+
+              {/* <Image
                 width={50}
                 height={50}
                 alt="testimonial"
                 src=""
                 className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
-              />
+              /> */}
               <span className="flex-grow flex flex-col pl-4">
                 <span className="title-font font-medium text-gray-900">
                   Holden Caulfield

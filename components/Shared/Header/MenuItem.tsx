@@ -40,7 +40,15 @@ export const MenuItem: FC<IMenuItem & IIntlTranslator> = ({
           className="lg:py-1 lg:px-2.5 xl:py-2 xl:px-4 flex gap-2"
         >
           {t(label)}
-          {option && <Image src={downArrow} alt={label} />}
+          {option && (
+            <Image
+              src={downArrow}
+              alt={label}
+              width={10}
+              height={10}
+              className="w-[10] h-[10]"
+            />
+          )}
         </Link>
         {children}
       </li>

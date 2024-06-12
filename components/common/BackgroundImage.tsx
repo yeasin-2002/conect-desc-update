@@ -19,7 +19,7 @@ export const BackgroundImage: FC<IBackgroundImage> = ({
         (!hidden && "inset-0")
       }`}
     >
-      <Image src={img} className="w-full" alt="background image" fill />
+      <Image src={img} className="w-full object-fill" alt="background image" />
     </div>
 
     <section className="relative z-10">{children}</section>

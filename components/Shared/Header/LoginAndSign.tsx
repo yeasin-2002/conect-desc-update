@@ -14,7 +14,7 @@ export const LoginAndSign: FC<IIntlTranslator & IMobile> = ({ t, mobile }) => {
   const Login: FC = () => (
     <LinkButton link="/login" variant="secondary" size="sm">
       <div className="flex gap-2">
-        <Image src={profile} alt="" />
+        <Image src={profile} alt="Profile " />
         <div className="h-[20px] w-[2px] bg-primary" />
         {t("header.login")}
       </div>

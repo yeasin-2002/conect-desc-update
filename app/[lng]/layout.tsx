@@ -3,7 +3,6 @@ import { Exo, Inter, Poppins } from "next/font/google";
 import { FC } from "react";
 
 import { IChildrenWithIntl } from "@/Interface";
-import { languages } from "@/app/i18n/settings";
 import { dir } from "i18next";
 
 import { AOSInit } from "@/lib/AOSInit";
@@ -17,7 +16,8 @@ const poppins = Poppins({
 });
 
 export async function generateStaticParams() {
-  return languages.map((lng) => ({ lng }));
+  // return languages.map((lng) => ({ lng }));
+  return ["en", "bn"];
 }
 
 export const metadata: Metadata = {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 
 const RootLayout: FC<IChildrenWithIntl> = ({ children, params: { lng } }) => (
   <html lang={lng} dir={dir(lng)}>
-    <link
+    {/* <link
       rel="stylesheet"
       type="text/css"
       charSet="UTF-8"
@@ -37,7 +37,7 @@ const RootLayout: FC<IChildrenWithIntl> = ({ children, params: { lng } }) => (
       rel="stylesheet"
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-    />
+    /> */}
 
     <body className={(poppins.className, exo.className, inter.className)}>
       <AOSInit />
