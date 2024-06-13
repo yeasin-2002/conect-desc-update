@@ -23,7 +23,7 @@ export const AuthTopSection: FC<IAuthTopSection> = ({
       )}
 
       {labelType === "title" ? (
-        <h3 className="text-neutral text-xs md:text-sm font-semibold">
+        <h3 className="text-neutral text-xs md:text-sm font-semibold xl:text-lg  xl:py-1 2xl:text-2xl 2xl:py-2">
           {label}
         </h3>
       ) : (

@@ -22,7 +22,7 @@ export const ToggleButton: FC<IToggleButton> = ({ setUserType, userType }) => (
         variant={userType === i ? "primary" : "secondary"}
         className={`${
           i === "Business Login" ? "rounded-r-none" : "rounded-l-none"
-        } transition-all duration-500 capitalize`}
+        } transition-all duration-500 capitalize   xl:text-lg xl:px-3 xl:py-2  2xl:text-xl 2xl:px-4 2xl:py-3 whitespace-nowrap `}
       >
         {i}
       </Button>

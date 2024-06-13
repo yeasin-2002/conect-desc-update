@@ -21,14 +21,14 @@ export const AuthNavigate: FC<IAuthNavigate> = ({
     </Link>
   ) : (
     <>
-      <p className="text-center my-2 md:my-3 lg:my-3.5 text-sm font-medium">
+      <p className="text-center my-2 md:my-3 lg:my-3.5 text-sm font-medium xl:text-base 2xl:text-xl 2xl:mt-4">
         {label}&nbsp;
         <Link className="text-primary" href={link}>
           {btnText}
         </Link>
       </p>
 
-      <Link href="/" className="flex gap-3">
+      <Link href="/" className="flex gap-3 xl:text-xl xl:mt-5 2xl:mt-10  ">
         <Image src={roundArrow} alt="" />
         <p className="cursor-pointer">Back to home</p>
       </Link>

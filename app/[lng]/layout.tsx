@@ -6,6 +6,7 @@ import { Toaster } from "react-hot-toast";
 import { IChildrenWithIntl } from "@/Interface";
 import { dir } from "i18next";
 
+import { DeviceInfo } from "@/components/development/DeviceInfo";
 import { AOSInit } from "@/lib/AOSInit";
 import "@/styles/globals.css";
 
@@ -42,8 +43,9 @@ const RootLayout: FC<IChildrenWithIntl> = ({ children, params: { lng } }) => (
 
     <body className={(poppins.className, exo.className, inter.className)}>
       <AOSInit />
-      <Toaster />
       {children}
+      <Toaster />
+      {process.env.NODE_ENV === "development" && <DeviceInfo />}
     </body>
   </html>
 );
