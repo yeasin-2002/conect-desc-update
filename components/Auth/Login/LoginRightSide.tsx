@@ -1,12 +1,12 @@
 "use client";
 
-import { ChangeEvent, FC, useState } from "react";
+import { ChangeEvent, useState } from "react";
 
 import { IUserType } from "@/Interface";
 import { InputField } from "@/components";
 import { AuthMainRightSide } from "..";
 
-export const LoginRightSide: FC = () => {
+export const LoginRightSide = () => {
   const [userType, setUserType] = useState<IUserType>("Business Login");
 
   const handleOnChange = (e: ChangeEvent<HTMLInputElement>) => {

@@ -31,7 +31,7 @@ export interface IAgreeSection {
   labelLink2?: string;
 }
 
-export interface LeftSiteProps {
+export interface LeftSiteProps extends React.ComponentPropsWithRef<"div"> {
   paragraph?: JSX.Element | string;
   isSubTitle?: boolean;
   image: StaticImageData;

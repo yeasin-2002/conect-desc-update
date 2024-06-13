@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FC } from "react";
+import { twMerge } from "tailwind-merge";
 
 import { LeftSiteProps } from "@/Interface";
 import { Button, CommonText } from "..";
@@ -11,8 +12,14 @@ export const AuthLeftSide: FC<LeftSiteProps> = ({
   bottomBtn,
   paragraph,
   isSubTitle,
+  ...rest
 }) => (
-  <div className="w-full flex flex-col justify-center items-center text-center bg-gradient-to-t from-white via-base-100 to-white md:px-20 lg:px-0">
+  <div
+    className={
+      " w-full flex flex-col justify-center items-center text-center  bg-gradient-to-t from-white via-base-100 to-white md:px-20 lg:px-0  auth-box overflow-hidden"
+    }
+    {...rest}
+  >
     <div className="md:w-[80%]">
       <Image
         className="w-[80%] sm:w-full lg:max-w-[60%] max-w-[328px] mx-auto  xl:w-full xl:max-w-full"
