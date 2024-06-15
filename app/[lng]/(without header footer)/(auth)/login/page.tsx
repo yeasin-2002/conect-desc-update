@@ -14,7 +14,7 @@ const Login = () => (
     isRemoveMargin
     isRemovePadding
     fullScreen
-    className="py-5 lg:py-0  mx-auto"
+    className="py-5 lg:py-0  mx-auto "
   >
     <AuthComponent
       leftComponent={

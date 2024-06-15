@@ -1,7 +1,9 @@
 "use client";
 
 import { IMainContainer } from "@/Interface";
-import { FC } from "react";
+import React, { FC } from "react";
+
+
 
 export const MainContainer: FC<IMainContainer> = ({
   bg = "default",

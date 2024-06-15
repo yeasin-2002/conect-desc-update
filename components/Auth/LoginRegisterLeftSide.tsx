@@ -22,7 +22,7 @@ export const AuthLeftSide: FC<LeftSiteProps> = ({
   >
     <div className="md:w-[80%]">
       <Image
-        className="w-[80%] sm:w-full lg:max-w-[60%] max-w-[328px] mx-auto  xl:w-full xl:max-w-full"
+        className="w-[80%] sm:w-full lg:max-w-[60%] max-w-[328px] mx-auto  "
         src={image}
         alt="dfd"
       />
