@@ -7,7 +7,7 @@ export const AuthComponent: FC<IAuthComponent> = ({
   leftComponent,
   rightComponent,
 }) => (
-  <div className="w-[100%] flex flex-col lg:flex-row gap-5 p-5 ">
+  <div className="w-[100%] flex flex-col lg:flex-row gap-10 p-5  md:p-10 ">
     {leftComponent}
     {rightComponent}
   </div>

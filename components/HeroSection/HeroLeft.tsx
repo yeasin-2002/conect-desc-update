@@ -3,6 +3,7 @@
 import { IHeroLeft } from "@/Interface";
 import { arrowHero } from "@/public/assets/images";
 import Image from "next/image";
+import Link from "next/link";
 import { FC } from "react";
 import { Button } from "..";
 
@@ -52,13 +53,17 @@ export const HeroLeft: FC<IHeroLeft> = ({
 
     <div className="flex gap-4 items-center justify-start">
       {button1 && (
-        <Button variant="primary" text="14">
-          {button1}
-        </Button>
+        <Link href={"/packages"}>
+          <Button variant="primary" text="14">
+            {button1}
+          </Button>
+        </Link>
       )}
-      <Button variant="secondary" text="14">
-        {button2}
-      </Button>
+      <a href={"/https://www.youtube.com/"} target="_blank">
+        <Button variant="secondary" text="14">
+          {button2}
+        </Button>
+      </a>
     </div>
   </div>
 );

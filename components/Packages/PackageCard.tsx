@@ -16,7 +16,8 @@ export const PackageCard: FC<IPackageCard & IIntlTranslator> = ({
 }) => (
   <BackgroundImage
     key={index}
-    img={index % 2 === 0 ? packageBgLite : packageBg}
+    // img={index % 2 === 0 ? packageBgLite : packageBg}
+    img={packageBgLite}
     className="sm:w-[400px] shadow-lg rounded-[21px] max-w-[390px] sm:max-w-full"
   >
     <div
