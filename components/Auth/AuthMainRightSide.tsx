@@ -24,7 +24,7 @@ export const AuthMainRightSide: FC<IAuthMainRightSide> = ({
   btnLink,
   otp,
 }) => (
-  <section className="w-full md:w-[50%] mx-auto lg:pr-5 xl:w-full  h-full auth-box ">
+  <section className="auth-side-box w-full md:w-[50%] mx-auto lg:pr-5    auth-box ">
     <div className={`w-full ${maxWidth} mx-auto   `}>
       <AuthTopSection
         label={authTopLabel}
@@ -49,7 +49,7 @@ export const AuthMainRightSide: FC<IAuthMainRightSide> = ({
           variant="primary"
           width="full"
           size="md"
-          className="mt-4 xl:text-xl xl:py-3 xl:mt-6"
+          className="mt-4 2xl:text-xl 2xl:py-3 2xl:mt-6"
         >
           {btnText}
         </Button>

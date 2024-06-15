@@ -16,7 +16,7 @@ export const AuthLeftSide: FC<LeftSiteProps> = ({
 }) => (
   <div
     className={
-      " w-full flex flex-col justify-center items-center text-center  bg-gradient-to-t from-white via-base-100 to-white md:px-20 lg:px-0  auth-box overflow-hidden"
+      "auth-side-box  w-full flex flex-col justify-center items-center text-center  bg-gradient-to-t from-white via-base-100 to-white md:px-20 lg:px-0  auth-box overflow-hidden"
     }
     {...rest}
   >

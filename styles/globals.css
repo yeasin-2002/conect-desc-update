@@ -43,4 +43,7 @@ h6 {
   .auth-box {
     @apply ring px-5  py-5   rounded-sm ring-primary/40;
   }
+  .auth-side-box {
+    @apply min-h-16
+  }
 }

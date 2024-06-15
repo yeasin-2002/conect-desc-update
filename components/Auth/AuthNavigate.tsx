@@ -28,7 +28,7 @@ export const AuthNavigate: FC<IAuthNavigate> = ({
         </Link>
       </p>
 
-      <Link href="/" className="flex gap-3 xl:text-xl xl:mt-5 2xl:mt-10  ">
+      <Link href="/" className="flex gap-3 2xl:text-xl xl:mt-5 2xl:mt-10  ">
         <Image src={roundArrow} alt="" />
         <p className="cursor-pointer">Back to home</p>
       </Link>
