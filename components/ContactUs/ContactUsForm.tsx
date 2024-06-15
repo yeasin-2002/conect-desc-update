@@ -80,12 +80,13 @@ export const ContactUsForm: FC<IIntlTranslator> = ({ t }) => {
         }
         placeholder={t("contactForm.contactNumber")}
         name="contact"
+        className="mb-4"
       />
       <textarea
         value={formData.message}
         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
         name="message"
-        className="border-primary p-3 w-full"
+        className="border-primary p-3 w-full text-sm"
         placeholder={t("contactForm.writeMessage")}
         rows={8}
       />

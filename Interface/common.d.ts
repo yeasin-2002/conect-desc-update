@@ -170,7 +170,7 @@ export interface IHeroRight {
 
 export interface IHeroSection extends IHeroRight, IHeroLeft {}
 
-export interface InputFieldProps {
+export interface InputFieldProps extends React.ComponentPropsWithRef<"input"> {
   label?: string;
   type?: string;
   placeholder?: string;
