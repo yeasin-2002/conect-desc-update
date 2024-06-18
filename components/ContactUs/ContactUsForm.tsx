@@ -29,9 +29,9 @@ export const ContactUsForm: FC<IIntlTranslator> = ({ t }) => {
 
       await getContactInfoAndSendEmail(convertedFormData);
       toast.success("Email sent suc cessfully");
-      setFormData({
+      return setFormData({
         name: "",
-        address: "",
+        email: "",
         subject: "",
         message: "",
         contact: "",
@@ -55,6 +55,7 @@ export const ContactUsForm: FC<IIntlTranslator> = ({ t }) => {
         }
         placeholder={t("contactForm.yourName")}
         name="name"
+        required
       />
       <InputField
         value={formData.email}
@@ -64,6 +65,7 @@ export const ContactUsForm: FC<IIntlTranslator> = ({ t }) => {
         placeholder={t("contactForm.yourAddress")}
         name="email"
         type="email"
+        required
       />
       <InputField
         value={formData.subject}
@@ -72,6 +74,7 @@ export const ContactUsForm: FC<IIntlTranslator> = ({ t }) => {
         }
         placeholder={t("contactForm.writeSubject")}
         name="subject"
+        required
       />
       <InputField
         value={formData.contact}
@@ -81,6 +84,7 @@ export const ContactUsForm: FC<IIntlTranslator> = ({ t }) => {
         placeholder={t("contactForm.contactNumber")}
         name="contact"
         className="mb-4 text-sm placeholder:text-sm"
+        required
       />
       <textarea
         value={formData.message}
@@ -89,6 +93,8 @@ export const ContactUsForm: FC<IIntlTranslator> = ({ t }) => {
         className="border-primary p-3 w-full text-sm placeholder:text-sm capitalize"
         placeholder={t("contactForm.writeMessage")}
         rows={8}
+        required
+        minLength={2}
       />
       <br /> <br />
       <Button width="full" variant="primary" type="submit">

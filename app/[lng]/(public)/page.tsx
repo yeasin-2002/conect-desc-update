@@ -43,3 +43,4 @@ const Home: FC<IIntlParams> = ({ params: { lng } }) => {
 };
 
 export default Home;
+

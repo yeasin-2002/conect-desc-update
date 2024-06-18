@@ -13,6 +13,7 @@ export const InputField: FC<InputFieldProps> = ({
   otp,
   name,
   value,
+  required = false,
   ...rest
 }) => (
   <div
@@ -41,6 +42,7 @@ export const InputField: FC<InputFieldProps> = ({
       onChange={(e) => handleOnChange(e)}
       type={type}
       placeholder={placeholder}
+      required={required}
     />
   </div>
 );
